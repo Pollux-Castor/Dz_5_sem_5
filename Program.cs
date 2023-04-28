@@ -21,6 +21,7 @@
 // Console.WriteLine(String.Join(",",Massive));
 // Console.WriteLine(hetNum);
 
+// ------------------------------------------------------------------------------------
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. 
 // Найдите сумму элементов, стоящих на нечётных позициях.
@@ -46,41 +47,41 @@
 // Console.WriteLine(String.Join(",",Massive));
 // Console.WriteLine(NehetNum);
 
-
+// ------------------------------------------------------------------------------------
 
 // Задача 38: Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-double[] Massive =new double[5];
+// double[] Massive =new double[5];
 
-for(int i=0; i<Massive.Length; i++)
-{
-Massive [i] = Math.Round (new Random().NextDouble()*100,2);
-}
+// for(int i=0; i<Massive.Length; i++)
+// {
+// Massive [i] = Math.Round (new Random().NextDouble()*100,2);
+// }
 
-double maxNum=Massive [0];
-double minNum=Massive [0];
-for(int i=0; i<Massive.Length; i++)
-{
+// double maxNum=Massive [0];
+// double minNum=Massive [0];
+// for(int i=0; i<Massive.Length; i++)
+// {
 
-    if (Massive[i] > maxNum )
-        {
-            maxNum = Massive[i];
-        }
+//     if (Massive[i] > maxNum )
+//         {
+//             maxNum = Massive[i];
+//         }
 
-    if (Massive[i] < minNum )
+//     if (Massive[i] < minNum )
 
-        {
-        minNum = Massive[i];
-        }
+//         {
+//         minNum = Massive[i];
+//         }
 
-}
-double raz = Math.Round ((maxNum-minNum),2);
+// }
+// double raz = Math.Round ((maxNum-minNum),2);
 
-Console.WriteLine($"Сгенерированный массив: {String.Join(" | ",Massive )}");
+// Console.WriteLine($"Сгенерированный массив: {String.Join(" | ",Massive )}");
 
-Console.WriteLine($"Максимальное значение массива: {maxNum}");
-Console.WriteLine($"Минимальное значение массива: {minNum}");
+// Console.WriteLine($"Максимальное значение массива: {maxNum}");
+// Console.WriteLine($"Минимальное значение массива: {minNum}");
 
-Console.WriteLine($"Разница между максимальным и минимальным значением массива: {raz} ");
+// Console.WriteLine($"Разница между максимальным и минимальным значением массива: {raz} ");
