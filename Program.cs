@@ -27,27 +27,60 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-int[] Massive =new int[4];
+// int[] Massive =new int[4];
 
-int NehetNum=0;
+// int NehetNum=0;
 
-for(int i=0; i<Massive.Length; i++)
+// for(int i=0; i<Massive.Length; i++)
 
-{
-Massive [i] =new Random().Next(-99,100);
+// {
+// Massive [i] =new Random().Next(-99,100);
 
-if (Massive[i]%2 !=0)
+// if (Massive[i]%2 !=0)
 
-            {
-            NehetNum+=Massive[i]; //NehetNum=NehetNum+Massive[i]
-            }
+//             {
+//             NehetNum+=Massive[i]; //NehetNum=NehetNum+Massive[i]
+//             }
 
-}
-Console.WriteLine(String.Join(",",Massive));
-Console.WriteLine(NehetNum);
+// }
+// Console.WriteLine(String.Join(",",Massive));
+// Console.WriteLine(NehetNum);
 
 
 
 // Задача 38: Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
+
+double[] Massive =new double[5];
+
+for(int i=0; i<Massive.Length; i++)
+{
+Massive [i] = Math.Round (new Random().NextDouble()*100,2);
+}
+
+double maxNum=Massive [0];
+double minNum=Massive [0];
+for(int i=0; i<Massive.Length; i++)
+{
+
+    if (Massive[i] > maxNum )
+        {
+            maxNum = Massive[i];
+        }
+
+    if (Massive[i] < minNum )
+
+        {
+        minNum = Massive[i];
+        }
+
+}
+double raz = Math.Round ((maxNum-minNum),2);
+
+Console.WriteLine($"Сгенерированный массив: {String.Join(" | ",Massive )}");
+
+Console.WriteLine($"Максимальное значение массива: {maxNum}");
+Console.WriteLine($"Минимальное значение массива: {minNum}");
+
+Console.WriteLine($"Разница между максимальным и минимальным значением массива: {raz} ");
